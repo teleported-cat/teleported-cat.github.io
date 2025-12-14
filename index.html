@@ -11,17 +11,53 @@
         <!--Ionicons 7.1.0-->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <!--Custom Styling-->
         <link href="styles/style.css" rel="stylesheet"/>
     </head>
     <body>
         <header>
-            <nav>
-
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                    <svg width="32px" height="32px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.94977 11.9498H39.9498" stroke="#F4F0F2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.94977 23.9498H39.9498" stroke="#F4F0F2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.94977 35.9498H39.9498" stroke="#F4F0F2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><ion-icon name="person"></ion-icon>About Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><ion-icon name="school"></ion-icon>Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><ion-icon name="ribbon"></ion-icon>Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><ion-icon name="rocket"></ion-icon>Projects</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav right">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><ion-icon name="at"></ion-icon>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
         </header>
         <main>
-
+            <h1>This is a test</h1>
+            <p>paragraph text test</p>
         </main>
     </body>
 </html>

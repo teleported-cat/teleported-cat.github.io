@@ -1,0 +1,132 @@
+/* Custom Fonts */
+@font-face {
+    font-family: "ModeNine";
+    src: url(/fonts/Modenine-2OPd.ttf);
+}
+
+/* Colour Palette */
+:root {
+    --white: #F4F0F2;
+    --black: #000000;
+    --black-25: rgba(0,0,0,0.25);
+    --black-50: rgba(0,0,0,0.5);
+    --mauve-shadow: #694F5D;
+    --muted-teal: #68A691;
+    --ash-grey: #BFD3C1;
+    --cotton-rose: #EFC7C2;
+
+}
+
+/* General Styling */
+
+* {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "ModeNine", monospace;
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+
+/* Navbar Styling */
+nav {
+    background-color: var(--white);
+    border-bottom: var(--muted-teal) solid 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav div.container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-toggler {
+    background-color: var(--muted-teal);
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    box-shadow: 4px 4px 0px var(--black-25);
+    transition: none;
+    color: var(--white);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 4px 4px 0px var(--black-25);
+}
+
+.navbar-toggler-icon {
+    width: 32px;
+    height: 32px;
+    background-image: none;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+ul.navbar-nav.left {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-item {
+    
+}
+
+.nav-link {
+    background-color: var(--muted-teal);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    font-family: "ModeNine", monospace;
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 4px 4px 0px var(--black-25);
+    transition: none;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--white);
+}
+
+/* Responsive Styles */
+@media (min-width: 992px) {
+    /* Navbar Styling */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    ul.navbar-nav.left {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 4px;
+        padding-right: 0px;
+    }
+
+    ul.navbar-nav.right {
+        padding-left: 0px;
+        padding-right: 4px;
+    }
+}
