@@ -336,6 +336,55 @@ section:nth-child(2n) h1 {
     
 }
 
+/* Skills Styling */
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+.skills-box {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px var(--black-25);
+    padding: 10px;
+    max-width: 350px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.skills-header {
+    font-family: var(--modenine);
+    font-size: 24px;
+    color: var(--mauve-shadow);
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: var(--mauve-shadow);
+    color: var(--white);
+    border: var(--mauve-shadow) solid 2px;
+    font-family: var(--modenine);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px var(--black-25);
+}
+
+.prev-skill {
+    background-color: var(--white);
+    color: var(--mauve-shadow);
+}
 
 /* Contact Styling */
 .contact-list {
