@@ -222,11 +222,11 @@ section:nth-child(2n) h1 {
 }
 
 .terminal-paragraph {
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
 }
 
 #terminal-body p:last-child {
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
 }
 
 .terminal-text-user {
@@ -420,6 +420,7 @@ footer p {
     margin: 0;
     text-align: center;
     padding: 10px;
+    color: var(--black);
 }
 
 /* Responsive Styles */
