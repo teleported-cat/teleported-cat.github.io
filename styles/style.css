@@ -86,6 +86,8 @@ nav div.container-fluid {
     border: var(--deep-teal) solid 4px;
     background-image: url(/images/background-thick-lines.svg);
     animation: background-scroll-line 4s linear 0s infinite;
+    background-size: 128px 128px;
+    background-repeat: repeat;
     box-shadow: 8px 8px 0px var(--black-25);
 }
 
@@ -308,6 +310,12 @@ section:nth-child(2n) h1 {
     flex-direction: column;
     gap: 0px;
     box-shadow: 4px 4px 0px var(--black-25);
+    transition: 0.25s box-shadow, 0.25s transform;
+}
+
+.showcase-card:hover {
+    box-shadow: 8px 8px 0px var(--black-25);
+    transform: translate(-4px, -4px);
 }
 
 .card-header {
@@ -366,6 +374,8 @@ section:nth-child(2n) h1 {
     color: var(--white) !important;
     border: var(--deep-teal) solid 4px;
     background-image: url(/images/background-thick-lines.svg);
+    background-size: 128px 128px;
+    background-repeat: repeat;
     animation: background-scroll-line 4s linear 0s infinite;
     box-shadow: 8px 8px 0px var(--black-25);
 }
@@ -426,6 +436,12 @@ section:nth-child(2n) h1 {
     display: flex;
     gap: 10px;
     flex-direction: column;
+    transition: 0.25s box-shadow, 0.25s transform;
+}
+
+.skills-box:hover {
+    box-shadow: 8px 8px 0px var(--black-25);
+    transform: translate(-4px, -4px);
 }
 
 .skills-header {
@@ -444,17 +460,34 @@ section:nth-child(2n) h1 {
 .skill {
     background-color: var(--mauve-shadow);
     color: var(--white);
-    border: var(--mauve-shadow) solid 2px;
+    border: var(--mauve-shadow) solid 4px;
     font-family: var(--modenine);
     font-size: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 4px 4px 0px var(--black-25);
+    transition: 0.25s box-shadow, 0.25s background-color, 0.25s color, 0.25s border;
 }
 
 .prev-skill {
     background-color: var(--white);
     color: var(--mauve-shadow);
+}
+
+.skill:hover {
+    box-shadow: 6px 6px 0px var(--black-25);
+    background-color: var(--white);
+    color: var(--mauve-shadow);
+    border: var(--mauve-shadow) solid 4px;
+    background-image: url(/images/background-thick-lines.svg);
+    background-size: 128px 128px;
+    background-repeat: repeat;
+    animation: background-scroll-line 4s linear 0s infinite;
+}
+
+.prev-skill:hover {
+    background-color: var(--mauve-shadow);
+    color: var(--white);
 }
 
 /* Contact Styling */
@@ -487,6 +520,8 @@ section:nth-child(2n) h1 {
     color: var(--white);
     border: var(--deep-teal) solid 4px;
     background-image: url(/images/background-thick-lines.svg);
+    background-size: 128px 128px;
+    background-repeat: repeat;
     animation: background-scroll-line 4s linear 0s infinite;
     box-shadow: 8px 8px 0px var(--black-25);
 }
