@@ -18,6 +18,10 @@
     0% {background-position: 0px 0px;}
     100% {background-position: 42px 42px;}
 }
+@keyframes background-scroll-line {
+    0% {background-position: 0px 0px;}
+    100% {background-position: 64px 64px;}
+}
 
 /* Colour Palette */
 :root {
@@ -26,6 +30,7 @@
     --black-25: rgba(0,0,0,0.25);
     --black-50: rgba(0,0,0,0.5);
     --mauve-shadow: #694F5D;
+    --deep-teal: #427061;
     --muted-teal: #68A691;
     --ash-grey: #BFD3C1;
     --cotton-rose: #EFC7C2;
@@ -72,10 +77,26 @@ nav div.container-fluid {
     box-shadow: 4px 4px 0px var(--black-25);
     transition: none;
     color: var(--white);
+    transition: 0.25s border, 0.25s box-shadow, 0.1s color;
+    border: var(--muted-teal) solid 4px;
+}
+
+.navbar-toggler:hover {
+    color: var(--white);
+    border: var(--deep-teal) solid 4px;
+    background-image: url(/images/background-thick-lines.svg);
+    animation: background-scroll-line 4s linear 0s infinite;
+    box-shadow: 8px 8px 0px var(--black-25);
 }
 
 .navbar-toggler:focus {
+    color: var(--white);
+    border: var(--deep-teal) solid 4px;
     box-shadow: 4px 4px 0px var(--black-25);
+}
+
+.navbar-toggler:active {
+    color: var(--black) !important;
 }
 
 .navbar-toggler-icon {
@@ -103,6 +124,8 @@ ul.navbar-nav.left {
 
 .nav-link {
     background-color: var(--muted-teal);
+    background-size: 128px 128px;
+    background-repeat: repeat;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10px;
@@ -117,11 +140,25 @@ ul.navbar-nav.left {
     align-items: center;
     gap: 5px;
     box-shadow: 4px 4px 0px var(--black-25);
-    transition: none;
+    transition: 0.25s border, 0.25s box-shadow, 0.1s color;
+    border: var(--muted-teal) solid 4px;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover {
     color: var(--white);
+    border: var(--deep-teal) solid 4px;
+    background-image: url(/images/background-thick-lines.svg);
+    animation: background-scroll-line 4s linear 0s infinite;
+    box-shadow: 8px 8px 0px var(--black-25);
+}
+
+.nav-link:focus {
+    color: var(--white);
+    border: var(--deep-teal) solid 4px;
+}
+
+.nav-link:active {
+    color: var(--black);
 }
 
 /* Section Styling */
@@ -321,6 +358,25 @@ section:nth-child(2n) h1 {
     text-decoration: none;
     font-family: var(--modenine);
     box-shadow: 4px 4px 0px var(--black-25);
+    transition: 0.25s border, 0.25s box-shadow, 0.1s color;
+    border: var(--muted-teal) solid 4px;
+}
+
+.card-links a:hover {
+    color: var(--white) !important;
+    border: var(--deep-teal) solid 4px;
+    background-image: url(/images/background-thick-lines.svg);
+    animation: background-scroll-line 4s linear 0s infinite;
+    box-shadow: 8px 8px 0px var(--black-25);
+}
+
+.card-links a:focus {
+    color: var(--white) !important;
+    border: var(--deep-teal) solid 4px;
+}
+
+.card-links a:active {
+    color: var(--black) !important;
 }
 
 .full-width {
@@ -423,6 +479,25 @@ section:nth-child(2n) h1 {
     padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: 0.25s border, 0.25s box-shadow, 0.1s color;
+    border: var(--muted-teal) solid 4px;
+}
+
+.contact-list a:hover {
+    color: var(--white);
+    border: var(--deep-teal) solid 4px;
+    background-image: url(/images/background-thick-lines.svg);
+    animation: background-scroll-line 4s linear 0s infinite;
+    box-shadow: 8px 8px 0px var(--black-25);
+}
+
+.contact-list a:focus {
+    color: var(--white);
+    border: var(--deep-teal) solid 4px;
+}
+
+.contact-list a:active {
+    color: var(--black);
 }
 
 /* Footer Styling */
