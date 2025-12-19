@@ -1,12 +1,22 @@
 /* Custom Fonts */
 @font-face {
     font-family: "ModeNine";
-    src: url(/fonts/Modenine-2OPd.ttf);
+    src: url(/fonts/modenine-webfont.woff2);
 }
 
 @font-face {
     font-family: "Consolas";
-    src: url(/fonts/consola.ttf);
+    src: url(/fonts/consola-webfont.woff2);
+}
+
+/* Animations */
+@keyframes background-scroll-polka {
+    0% {background-position: 0px 0px;}
+    100% {background-position: 48px 48px;}
+}
+@keyframes background-scroll-grid {
+    0% {background-position: 0px 0px;}
+    100% {background-position: 42px 42px;}
 }
 
 /* Colour Palette */
@@ -38,6 +48,7 @@ ion-icon {
 /* Navbar Styling */
 nav {
     background-color: var(--white);
+    background-image: url(/images/background-thin-lines.svg);
     border-bottom: var(--muted-teal) solid 2px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -121,6 +132,8 @@ main {
 
 section {
     background-color: var(--mauve-shadow);
+    background-image: url(/images/background-polka-dot.svg);
+    animation: background-scroll-polka 2.5s linear 0s infinite;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -130,6 +143,8 @@ section {
 
 section:nth-child(2n) {
     background: var(--white);
+    background-image: url(/images/background-grid-dot.svg);
+    animation: background-scroll-grid 2.5s linear 0s infinite reverse;
 }
 
 h1 {
@@ -413,6 +428,7 @@ section:nth-child(2n) h1 {
 /* Footer Styling */
 footer {
     background-color: var(--white);
+    background-image: url(/images/background-thin-lines.svg);
     border-top: var(--muted-teal) solid 2px;
 }
 
