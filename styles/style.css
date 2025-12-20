@@ -417,6 +417,45 @@ section:nth-child(2n) h1 {
     
 }
 
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    border: var(--white) solid 2px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: left;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px var(--black-25);
+}
+
+.card-tags a {
+    color: var(--white);
+    text-decoration: none;
+    border: var(--white) solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    box-shadow: 4px 4px 0px var(--black-25);
+    background-color: var(--mauve-shadow);
+    transition: 0.1s color, 0.25s background-color, 0.25s box-shadow;
+}
+
+.card-tags a:hover {
+    color: var(--mauve-shadow);
+    background-color: var(--white);
+    background-image: url(/images/background-thick-lines.svg);
+    background-size: 128px 128px;
+    background-repeat: repeat;
+    animation: background-scroll-line 4s linear 0s infinite;
+    box-shadow: 8px 8px 0px var(--black-25);
+}
+
+.card-tags a:active {
+    color: var(--black);
+}
+
 /* Skills Styling */
 .skills {
     display: flex;
