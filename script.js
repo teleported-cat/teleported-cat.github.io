@@ -1,9 +1,9 @@
 function toggleTerminalCursorVisibility() {
     const cursor = document.getElementById("terminal-cursor");
-    if (cursor.style.display === "none") {
-        cursor.style.display = "inline";
+    if (cursor.style.opacity === "0") {
+        cursor.style.opacity = "1";
     } else {
-        cursor.style.display = "none";
+        cursor.style.opacity = "0";
     }
 }
 
